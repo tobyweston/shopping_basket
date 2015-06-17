@@ -1,5 +1,6 @@
+package shopping
+
 import org.specs2.mutable.Specification
-import shopping.Banana
 
 class FruitTest extends Specification {
 
