@@ -12,8 +12,6 @@ class CheckoutTest extends Specification {
 object Checkout {
 
   def price(items: Seq[Fruit]): Int = {
-    items.foldLeft(0)((a: Int, b: Fruit) => {
-      a + b.price
-    })
+    items.foldLeft(0)(_ + _.price)
   }
 }
