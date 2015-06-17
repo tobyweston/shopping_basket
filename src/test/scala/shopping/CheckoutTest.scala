@@ -10,6 +10,7 @@ class CheckoutTest extends Specification {
 
   "Applied a discount (buy one, get one free)" >> {
     Checkout.price(List(Apple, Apple)) must_== Apple.price
-    Checkout.price(List(Apple, Apple, Banana)) must_== Apple.price + Banana.price
+    Checkout.price(List(Apple, Apple, Pineapple)) must_== Apple.price + Pineapple.price
+    Checkout.price(List(Apple, Apple, Pineapple, Pineapple)) must_== Apple.price + Pineapple.price
   }
 }
