@@ -1,0 +1,7 @@
+**/target/**
+.metadata
+tar.gz
+.project
+.idea
+target
+
