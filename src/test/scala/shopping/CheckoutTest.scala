@@ -18,4 +18,9 @@ class CheckoutTest extends Specification {
     Checkout.price(List(Banana, Banana, Banana, Banana, Banana)) must_== Banana.price * 4
     Checkout.price(List(Banana, Banana, Banana, Apple)) must_== Banana.price * 2 + Apple.price
   }
+
+  "Acceptance criteria (as set out in the README)" >> {
+    val items = List(Apple, Apple, Orange, Apple, Pineapple, Banana, Orange, Banana)
+    Checkout.price(items) must_== 285
+  }
 }
