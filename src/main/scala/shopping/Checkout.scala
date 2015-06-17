@@ -3,6 +3,7 @@ package shopping
 object Checkout {
 
   def price(items: Seq[Fruit]): Int = {
-    items.map(_.price).sum
+    val discounts = items.groupBy(identity).map({ case (fruit, fruits) => fruit.discountFor(fruits) })
+    items.map(_.price).sum - discounts.sum
   }
 }
