@@ -14,12 +14,12 @@ Write a program which will calculate the total price of a basket of shopping, ta
 
 ### Price List
 
-| Item          | Price Per Item            |
-| ------------- | ------------- |
-| Apple         | 12p           |
-| Orange        | 32p           |
-| Banana        | 51p           |
-| Pineapple     | 95p           |
+| Item          | Price Per Item  |
+| ------------- | --------------- |
+| Apple         | 12p             |
+| Orange        | 32p             |
+| Banana        | 51p             |
+| Pineapple     | 95p             |
 
 
 ### Special Offers
