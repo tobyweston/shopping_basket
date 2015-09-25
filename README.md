@@ -1,4 +1,4 @@
-# Coding Problem: Shopping Basket
+# The Shopping Basket Problem
 
 ## Objective
 
